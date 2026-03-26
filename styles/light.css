@@ -23,6 +23,49 @@
     --content-text-color: #353430;
     --bg-image: url(../images/cover-image-light.png);
   }
+
+  :root:not(.theme-dark) .page {
+    background-color: var(--bg-color);
+  }
+
+  :root:not(.theme-dark) .header__rec {
+    display: none;
+  }
+
+  :root:not(.theme-dark) .header__theme-menu-button {
+    color: var(--content-text-color);
+  }
+
+  :root:not(.theme-dark) .header__theme-menu-button:hover {
+    outline: 1px solid var(--content-text-color);
+  }
+
+  :root:not(.theme-dark) .header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid var(--content-text-color);
+  }
+
+  :root:not(.theme-dark) .header__theme-menu-button_active {
+    outline: 1px solid var(--content-text-color);
+    pointer-events: none;
+  }
+
+  :root:not(.theme-dark) .title-decor {
+    color: var(--content-text-color);
+  }
+
+  :root:not(.theme-dark) .content__section-title {
+    color: var(--content-text-color);
+  }
+
+  :root:not(.theme-dark) .decorated-zone::before {
+    border-top: 1px solid var(--content-text-color);
+    border-right: 1px solid var(--content-text-color);
+  }
+
+  :root:not(.theme-dark) .decorated-zone::after {
+    border-bottom: 1px solid var(--content-text-color);
+    border-left: 1px solid var(--content-text-color);
+  }
 }
 
 .theme-light .page {
