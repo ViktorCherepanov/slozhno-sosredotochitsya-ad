@@ -1,7 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .header {
   min-height: 100vh;
-  min-height: 100dvh;
   position: relative;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
@@ -190,7 +189,6 @@
 
 .footer {
   min-height: 100vh;
-  min-height: 100dvh;
   display: grid;
   position: relative;
   align-items: center;
